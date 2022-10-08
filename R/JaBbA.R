@@ -169,6 +169,7 @@ JaBbA = function(## Two required inputs
                  filter_loose = FALSE,
 		 QCout=FALSE)
 {
+    set.seed(1) #Lingqun
     system(paste('mkdir -p', outdir))
     jmessage('Starting analysis in ', outdir <- normalizePath(outdir))
     cdir = normalizePath(getwd())
